@@ -1,0 +1,329 @@
+<html>
+ <head>
+  <title>Organigram Guru</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<style>
+/*Navbar*/
+.navbar {
+            display: flex;
+            justify-content: right;
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            position: relative;
+            padding: 5px 0;
+        }
+        .navbar a::after {
+            content: '\25BC';
+            font-size: 10px;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .navbar a:last-child::after {
+            content: '';
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /*Struktur*/
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.organigram {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.organigram img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.section {
+    text-align: left;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+}
+
+
+/*Footer*/
+main {
+    background-color: #00BFFF;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu-item {
+    text-align: left;
+}
+.menu-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.menu-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-item ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.footer {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <img src="img/smk.jpg" height="50" alt="SMK BPPI" width="100">
+<div class="navbar">
+    <div class="dropdown">
+        <a href="#">Home</a>
+        <div class="dropdown-content">
+            <a href="#">Sambutan</a>
+            <a href="#">Agenda Terdekat</a>
+            <a href="#">Berita terbaru</a>
+            <a href="#">Kerja Sama</a>
+            <a href="#">Web Yayasan</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Sejarah</a>
+            <a href="#">Visi Misi</a>
+            <a href="#">Struktur</a>
+            <a href="#">Daftar Guru</a>
+            <a href="#">Akreditasi</a>
+            <a href="#">Fasilitas</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Program</a>
+        <div class="dropdown-content">
+            <a href="#">Program Akademik</a>
+            <a href="#">Prestasi Sekolah</a>
+            <a href="#">PKL</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">BKK</a>
+        <div class="dropdown-content">
+            <a href="#">Informasi Hiring</a>
+            <a href="#">Tracker Study</a>
+            <a href="#">Testimoni Alumni</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">PPDB</a>
+        <div class="dropdown-content">
+            <a href="#">Formulir</a>
+            <a href="#">SDK</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Event</a>
+        <div class="dropdown-content">
+            <a href="#">Acara Besar Sekolah</a>
+            <a href="#">Berita Sekolah</a>
+            <a href="#">Agenda Sekolah</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Kontak</a>
+        <div class="dropdown-content">
+            <a href="#">Denah</a>
+            <a href="#">Alamat</a>
+            <a href="#">Peta</a>
+            <a href="#">Media Sosial</a>
+        </div>
+    </div>
+</div>
+
+<!--Struktur-->
+<div class="container">
+    <h1>
+     Organigram Guru
+    </h1>
+    <div class="organigram">
+     <img alt="Organigram structure of SMK BPPI Baleendah 2024-2025 with various staff members and their roles" height="400" src="https://storage.googleapis.com/a1aa/image/BfIejR4TGygby0TonOwDao0gmEO4Y4rePhLYMvWSvIvkKPRnA.jpg" width="800"/>
+    </div>
+    <div class="section">
+     <h2>Tugas Kepala Sekolah:</h2>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="section">
+     <h2>Tugas Wakasek:</h2>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+   </div>
+
+<!--Footer-->
+<main id="mm">
+    <div class="container">
+        <div class="logo"></div>
+        <div class="menu">
+            <div class="menu-item">
+                <h3><i class="fas fa-home"></i> Home</h3>
+                <ul>
+                    <li>Sambutan</li>
+                    <li>Agenda Terdekat</li>
+                    <li>Berita Terbaru</li>
+                    <li>Struktur</li>
+                    <li>Kerjasama</li>
+                    <li>Web Yayasan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-book"></i> About</h3>
+                <ul>
+                    <li>Profil</li>
+                    <li>Sejarah</li>
+                    <li>Visi Misi</li>
+                    <li>Struktur</li>
+                    <li>Daftar Guru</li>
+                    <li>Akreditasi</li>
+                    <li>Fasilitas</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-graduation-cap"></i> PPDB</h3>
+                <ul>
+                    <li>Formulir</li>
+                    <li>Surat Dan Keterangan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-briefcase"></i> Program</h3>
+                <ul>
+                    <li>Program Akademik</li>
+                    <li>Prestasi Sekolah</li>
+                    <li>PKL</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-users"></i> BKK</h3>
+                <ul>
+                    <li>Informasi Hiring</li>
+                    <li>Tracker Study</li>
+                    <li>Testimoni Alumni</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-phone"></i> Kontak</h3>
+                <ul>
+                    <li>Denah</li>
+                    <li>Alamat</li>
+                    <li>Media Sosial</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © DMM DMM DMM DMM DMM DMM DMM DMM DMM
+    </div>
+</main>
+ <script src="script.js"></script>
+</body>
+</html>

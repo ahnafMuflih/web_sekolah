@@ -1,0 +1,157 @@
+body {
+    background-color: #f4f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.event-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+.event-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.event-text p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+.event-box {
+    flex: 2;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.event-box img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    position: relative;
+    padding: 5px 0;
+}
+.navbar a::after {
+    content: '\25BC';
+    font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar a:last-child::after {
+    content: '';
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Footer*/
+main {
+    background-color: #00BFFF;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.f-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu-item {
+    text-align: left;
+}
+.menu-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.menu-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-item ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        color: #333;
+        border-top: 1px solid #ccc;
+        position: relative;
+        bottom: 0;
+    
+}

@@ -1,0 +1,440 @@
+<html>
+ <head>
+  <title>
+   Kerjasama
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px 0;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            position: relative;
+            padding: 5px 0;
+        }
+        .navbar a::after {
+            content: '\25BC';
+            font-size: 10px;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .navbar a:last-child::after {
+            content: '';
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .logo-item {
+            margin: 0 10px;
+            text-align: center;
+        }
+        .logo-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #d3d3d3;
+        }
+        .logo-item p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .arrow {
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .poster {
+            background-color: rgb(48, 45, 45);
+            padding: 40px;
+            border-radius: 20px;
+            display: inline-block;
+            position: relative;
+        }
+        .poster p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .poster .arrow-left, .poster .arrow-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+        .poster .arrow-left {
+            left: -40px;
+        }
+        .poster .arrow-right {
+            right: -40px;
+        }
+  </style>
+ </head>
+ <body>
+    <div class="header">
+        <div>
+         <img src="img/smk.jpg" height="50" alt="SMK BPPI" width="100"></div>
+        </div>
+    <div class="navbar">
+        <div class="dropdown">
+            <a href="#">Home</a>
+            <div class="dropdown-content">
+                <a href="#">Sambutan</a>
+                <a href="#">Agenda Terdekat</a>
+                <a href="#">Berita terbaru</a>
+                <a href="#">Kerja Sama</a>
+                <a href="#">Web Yayasan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Sejarah</a>
+                <a href="#">Visi Misi</a>
+                <a href="#">Struktur</a>
+                <a href="#">Daftar Guru</a>
+                <a href="#">Akreditasi</a>
+                <a href="#">Fasilitas</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Program</a>
+            <div class="dropdown-content">
+                <a href="#">Program Akademik</a>
+                <a href="#">Prestasi Sekolah</a>
+                <a href="#">PKL</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">BKK</a>
+            <div class="dropdown-content">
+                <a href="#">Informasi Hiring</a>
+                <a href="#">Tracker Study</a>
+                <a href="#">Testimoni Alumni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">PPDB</a>
+            <div class="dropdown-content">
+                <a href="#">Formulir</a>
+                <a href="#">SDK</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Event</a>
+            <div class="dropdown-content">
+                <a href="#">Acara Besar Sekolah</a>
+                <a href="#">Berita Sekolah</a>
+                <a href="#">Agenda Sekolah</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Kontak</a>
+            <div class="dropdown-content">
+                <a href="#">Denah</a>
+                <a href="#">Alamat</a>
+                <a href="#">Peta</a>
+                <a href="#">Media Sosial</a>
+            </div>
+        </div>
+    </div>
+  <div class="container">
+   <h1>
+    Kerjasama
+   </h1>
+   <div class="logos">
+    <i class="fas fa-arrow-left arrow">
+    </i>
+    <div class="logo-item">
+     <img alt="Logo 1" height="80" src="https://storage.googleapis.com/a1aa/image/qejf5lP3WYsCZ0pDbDZ3HYeJB4Eutj6zbfAJaEPxnOarEXiOB.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 2" height="80" src="https://storage.googleapis.com/a1aa/image/lzfG06jbEFWOYK70BUyoxga2MCT0EfHYMSE0PBvAaDqQxloTA.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 3" height="80" src="https://storage.googleapis.com/a1aa/image/akSlTEv3l7qhCtoffezSk0edSbp6JZ0Y50yZ2uSfBUwzJuEdC.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 4" height="80" src="https://storage.googleapis.com/a1aa/image/LihbqhmM15YaAt7mmncvYEP3zfYNu64NRv4Xbka34YDk4S0JA.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 5" height="80" src="https://storage.googleapis.com/a1aa/image/XqgKAWaswRpJGBRwjSSWTKvf28qLmu8RgsgicOrblUJm4S0JA.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 6" height="80" src="https://storage.googleapis.com/a1aa/image/x4v41ner03RYRy2GtfPWB8vuHQ2f4LsLX2ePDHDCAeArJuEdC.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <div class="logo-item">
+     <img alt="Logo 7" height="80" src="https://storage.googleapis.com/a1aa/image/npQElZeMluxILq9nE9dRfTsXH3SUM2vQkXRL8e17aCYTiLRnA.jpg" width="80"/>
+     <p>
+      Nama
+     </p>
+    </div>
+    <i class="fas fa-arrow-right arrow">
+    </i>
+   </div>
+   <div class="poster">
+    <i class="fas fa-arrow-left arrow-left">
+    </i>
+    <p>
+     Poster Kerjasama
+    </p>
+    <i class="fas fa-arrow-right arrow-right">
+    </i>
+   </div>
+  </div>
+
+  <!--Footer-->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Awards</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti
+                dicta, aliquam sequi voluptate quas.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >MDBootstrap.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+<!--
+  <main id="mm">
+    <div class="container">
+        <div class="logo"></div>
+        <div class="menu">
+            <div class="menu-item">
+                <h3><i class="fas fa-home"></i> Home</h3>
+                <ul>
+                    <li>Sambutan</li>
+                    <li>Agenda Terdekat</li>
+                    <li>Berita Terbaru</li>
+                    <li>Struktur</li>
+                    <li>Kerjasama</li>
+                    <li>Web Yayasan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-book"></i> About</h3>
+                <ul>
+                    <li>Profil</li>
+                    <li>Sejarah</li>
+                    <li>Visi Misi</li>
+                    <li>Struktur</li>
+                    <li>Daftar Guru</li>
+                    <li>Akreditasi</li>
+                    <li>Fasilitas</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-graduation-cap"></i> PPDB</h3>
+                <ul>
+                    <li>Formulir</li>
+                    <li>Surat Dan Keterangan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-briefcase"></i> Program</h3>
+                <ul>
+                    <li>Program Akademik</li>
+                    <li>Prestasi Sekolah</li>
+                    <li>PKL</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-users"></i> BKK</h3>
+                <ul>
+                    <li>Informasi Hiring</li>
+                    <li>Tracker Study</li>
+                    <li>Testimoni Alumni</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-phone"></i> Kontak</h3>
+                <ul>
+                    <li>Denah</li>
+                    <li>Alamat</li>
+                    <li>Media Sosial</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © DMM DMM DMM DMM DMM DMM DMM DMM DMM
+    </div>-->
+</main>
+<script src="script.js"></script>
+ </body>
+</html>

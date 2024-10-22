@@ -1,0 +1,294 @@
+<html>
+ <head>
+  <title>Visi Misi</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+    .navbar {
+    display: block;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    position: relative;
+    padding: 5px 0;
+}
+.navbar a::after {
+    content: '\25BC';
+    font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar a:last-child::after {
+    content: '';
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.visi h3 {
+    height: 5%;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+
+.visi p {
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+
+.misi h3 {
+    height: 5%;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+.misi p {
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+
+    /*Footer*/
+main {
+    background-color: #00BFFF;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu-item {
+    text-align: left;
+}
+.menu-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.menu-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-item ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.footer {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+  </style>
+ </head>
+ <body>
+        <div>
+         <img src="smk.jpg" height="50" alt="SMK BPPI" width="100">
+        </div>
+    <main>
+    <div class="navbar">
+        <div class="dropdown">
+            <a href="#">Home</a>
+            <div class="dropdown-content">
+                <a href="#">Sambutan</a>
+                <a href="#">Agenda Terdekat</a>
+                <a href="#">Berita Terbaru</a>
+                <a href="#">Kerja Sama</a>
+                <a href="#">Web Yayasan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Sejarah</a>
+                <a href="#">Visi Misi</a>
+                <a href="#">Struktur</a>
+                <a href="#">Daftar Guru</a>
+                <a href="#">Akreditasi</a>
+                <a href="#">Fasilitas</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Program</a>
+            <div class="dropdown-content">
+                <a href="#">Program Akademik</a>
+                <a href="#">Prestasi Sekolah</a>
+                <a href="#">PKL</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">BKK</a>
+            <div class="dropdown-content">
+                <a href="#">Informasi Hiring</a>
+                <a href="#">Tracker Study</a>
+                <a href="#">Testimoni Alumni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">PPDB</a>
+            <div class="dropdown-content">
+                <a href="#">Formulir</a>
+                <a href="#">SDK</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Event</a>
+            <div class="dropdown-content">
+                <a href="#">Acara Besar Sekolah</a>
+                <a href="#">Berita Sekolah</a>
+                <a href="#">Agenda Sekolah</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Kontak</a>
+            <div class="dropdown-content">
+                <a href="#">Denah</a>
+                <a href="#">Alamat</a>
+                <a href="#">Peta</a>
+                <a href="#">Media Sosial</a>
+            </div>
+        </div>
+        </div>
+        </main>
+        <!--Penutup Navbar-->
+
+        <!--Visi Misi-->
+            <div class="visi">
+                <h3>Visi</h3>
+                <p> Menciptakan lulusan yang berkompeten dengan kebutuhan industri serta berkarakter, religius, profesional, dan berwawasan lingkungan.</p>
+            </div>
+            <div class="misi">
+                <h3>Misi</h3>
+                <p>1.Mewujudkan masyarakat sekolah yang relegius melalui peningkatan Pendidikan yang bermuatan imtaq.</p>
+                <p>2.Membangun prilaku disiplin Siswa sejak dini.</p>
+                <p>3.Meningkatkan kemampuan siswa dalam kegiatan intra dan ekstrakurikuler.</p>
+                <p>4.Meningkatkan efektifitas KBM serta pembinaan seluruh warga sekolah dalam menegakan disiplin yang dilandasi keikhlasan dan penuh rasa tanggungjawab.</p>
+                <p>5.Mengembangkan dan memacu propesionalisme kerja, baik guru maupun tenaga tata laksana sehingga memperoleh sumber daya yang berkualitas.</p>
+                <p>6.Menyiapkan lulusan dapat diserap oleh Dunia Industri, mampu berwirausaha dan dapat menlanjutkan studi ke jenjang berikutnya.</p>
+                <p>7.Mewujudkan lingkungan sekolah yang hijau, indah, aman dan Nyaman.</p>
+            </div>
+
+        <!--Footer-->
+  <main>
+    <div class="f-container">
+        <div class="logo"></div>
+        <div class="menu">
+            <div class="menu-item">
+                <h3><i class="fas fa-home"></i> Home</h3>
+                <ul>
+                    <li>Sambutan</li>
+                    <li>Agenda Terkini</li>
+                    <li>Berita Terbaru</li>
+                    <li>Struktur</li>
+                    <li>Kerjasama</li>
+                    <li>Web Yayasan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-book"></i> About</h3>
+                <ul>
+                    <li>Profil</li>
+                    <li>Sejarah</li>
+                    <li>Visi Misi</li>
+                    <li>Struktur</li>
+                    <li>Daftar Guru</li>
+                    <li>Akreditasi</li>
+                    <li>Fasilitas</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-graduation-cap"></i> PPDB</h3>
+                <ul>
+                    <li>Formulir</li>
+                    <li>Daftar dan Kelengkapan</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-briefcase"></i> Program</h3>
+                <ul>
+                    <li>Program Akademik</li>
+                    <li>Program Beasiswa</li>
+                    <li>PKL</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-users"></i> DKK</h3>
+                <ul>
+                    <li>Informasi Hiring</li>
+                    <li>Yayasan Study</li>
+                    <li>Testimoni Alumni</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3><i class="fas fa-phone"></i> Kontak</h3>
+                <ul>
+                    <li>Denah</li>
+                    <li>Alamat</li>
+                    <li>Media Sosial</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © DMM DMM DMM DMM DMM DMM DMM DMM DMM
+    </div>
+  </main>
+  <script src="script.js"></script>
+ </body>
+</html>
